@@ -2,9 +2,7 @@ var Doctor = require('./../js/doctor.js').doctorModule;
 
 var displayDoctor = function(results, medicalIssue) {
   results.forEach(function(doctor) {
-    $('#results').append(doctor.profile.last_name);
-    console.log(results);
-    console.log(result);
+    $('#results').append("<li>" + doctor.profile.last_name + "</li>");
   });
   // $('#results').text("the illness you have typed is" + medicalIssue + ". Here are some doctors" + doctorData);
 };
