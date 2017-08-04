@@ -1,9 +1,9 @@
 var Doctor = require('./../js/doctor.js').doctorModule;
 
-var displayDoctor = function(results, medicalIssue) {
-  results.forEach(function(doctor) {
-    $('#results').append("<li>" + doctor.profile.last_name + " " + doctor.profile.first_name + "</li>");
-    console.log(doctor);
+var displayDoctor = function(doctors, medicalIssue) {
+  doctors.forEach(function(doctor) {
+    $('#results').append(medicalIssue + "<li>" + doctor.profile.last_name + ",   " + doctor.profile.first_name + "</li>");
+    console.log(doctor.profile);
   });
   // $('#results').text("the illness you have typed is" + medicalIssue + ". Here are some doctors" + doctorData);
 };
