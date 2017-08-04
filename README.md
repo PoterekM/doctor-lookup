@@ -22,8 +22,8 @@ _**Ensure that the following programs are downloaded to your computer:**_
 _**Cloning directions:**_
   * From your local console:
     * Enter Desktop by typing `cd Desktop`
-    * Type `git clone https://github.com/kerrbrittany9/js-stolen-bike.git`
-    * Type `cd js-stolen-bike` to enter directory.
+    * Type `git clone https://github.com/PoterekM/doctor-lookup.git`
+    * Type `cd doctor-lookup` to enter directory.
     * To install packages in project type:
       * `npm install`
       * `bower install`
@@ -60,8 +60,11 @@ _**Cloning directions:**_
 * _SASS_
 * _Node.js_
 
+## Known Bugs
+* _Program is not able to repeat back to user what it is that they searched for._
+
 ### License
 
-Copyright &copy; 2017 Brittany Kerr and Michelle Poterek
+Copyright &copy; 2017 Michelle Poterek
 
 This software is licensed under the MIT license.
