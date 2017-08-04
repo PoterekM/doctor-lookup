@@ -1,7 +1,7 @@
 var Doctor = require('./../js/doctor.js').doctorModule;
 
 var displayDoctor = function(medicalIssue, doctorData) {
-  $('#results').text("the illness you have typed is" + medicalIssue + ".");
+  $('#results').text("the illness you have typed is" + medicalIssue + ". Here are some doctors" + doctorData);
 };
 
 $(document).ready(function() {
