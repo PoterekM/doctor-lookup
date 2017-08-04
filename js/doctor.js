@@ -1,5 +1,5 @@
-var apiKey = require('./../.env').apiKey;
-///
+var apiKey = require('./../.env').exports;
+/// having exports up here breaks code
 
 function Doctor() {
 
