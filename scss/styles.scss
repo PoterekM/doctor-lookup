@@ -10,7 +10,6 @@ $charleston-green: #262730;
   border: 3px solid $eggshell;
   padding: 40px 80px;
   color: $charleston-green;
-  text-align: center;
   .button {
     font-weight: bold;
     text-align: center;
@@ -19,6 +18,9 @@ $charleston-green: #262730;
   }
 }
 
+#description {
+  list-style: none;
+}
 
 
 body {
