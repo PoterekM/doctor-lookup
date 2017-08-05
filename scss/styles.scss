@@ -1,21 +1,26 @@
 $malachite: #108070;
+$english-vermillion: #D33F49;
+$thistle: #D7C0D0;
+$eggshell: #EFF0D1;
+$green-sheen: #77BA99;
+$charleston-green: #262730;
 
 .box {
-  background: $malachite;
-  border: 3px solid black;
+  background: $green-sheen;
+  border: 3px solid $eggshell;
   padding: 40px 80px;
+  color: $charleston-green;
+  text-align: center;
   .button {
     font-weight: bold;
     text-align: center;
-    background: salmon;
-    color: lightpink;
+    background: $eggshell;
+    color: $charleston-green;
   }
 }
 
-.2 {
-  background: grey;
-}
+
 
 body {
-  background: #7c889b;
+  background: $charleston-green;
 }
