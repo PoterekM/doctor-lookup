@@ -5,15 +5,26 @@ function Doctor() {
 
 }
 
-Doctor.prototype.getDoctor = function(medicalIssue, displayDoctor) {
+Doctor.prototype.getDoctor = function(medicalIssue, displayDoctor, doctor) {
    $.get('https://api.betterdoctor.com/2016-03-01/doctors?query='+ medicalIssue + '&location=45.5231%2C-122.6765%2C%205&user_location=45.5231%2C-122.6765&skip=0&limit=20&user_key=' + apiKey)
    .then(function(result) {
-     displayDoctor(result.data, medicalIssue);
-     console.log(medicalIssue);
-   })
+     displayDoctor(result.data, medicalIssue, displayDoctor);
+
+    })
    .fail(function(error){
       console.log("fail");
     });
   };
+
+Doctor.prototype.getMedical = function(medicalIssue) {
+     $.get('https://api.betterdoctor.com/2016-03-01/doctors?query='+ medicalIssue + '&location=45.5231%2C-122.6765%2C%205&user_location=45.5231%2C-122.6765&skip=0&limit=20&user_key=' + apiKey)
+     .then(function(result) {
+       displayAilment(medicalIssue);
+
+      })
+     .fail(function(error){
+        console.log("fail");
+      });
+    };
 
 exports.doctorModule = Doctor;

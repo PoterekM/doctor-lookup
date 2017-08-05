@@ -5,20 +5,19 @@ var displayDoctor = function(doctors, medicalIssue) {
     $('#results').append("<li>" + doctor.profile.last_name + ", " + doctor.profile.first_name + " " + "</li>");
     console.log(doctor.specialties);
   });
+  $('.reported-illness').text("Your search for '" + medicalIssue + "' returned these doctors:");
 };
 
-var displayAilment = function(doctors, medicalIssue) {
-  console.log("boop");
-  $('.reported-illness').text("<p>" + "here's what you searched for" + medicalIssue + "</p>");
-};
+
 
 $(document).ready(function() {
-  var doctorObject = new Doctor();
   $('#medical-issue').submit(function(event) {
     var medicalIssue = $('#illness').val();
+    var doctorObject = new Doctor(medicalIssue);
     event.preventDefault();
     $('#results').empty();
-    doctorObject.getDoctor(medicalIssue, displayAilment, displayDoctor);
+    doctorObject.getDoctor(medicalIssue, displayDoctor);
+
     $('#illness').val("");
   });
 });
