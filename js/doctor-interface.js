@@ -14,6 +14,7 @@ $(document).ready(function() {
     var medicalIssue = $('#illness').val();
     var doctorObject = new Doctor(medicalIssue);
     event.preventDefault();
+    $('.illness-display').show();
     $('#results').empty();
     doctorObject.getDoctor(medicalIssue, displayDoctor);
 

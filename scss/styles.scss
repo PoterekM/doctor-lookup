@@ -5,11 +5,18 @@ $eggshell: #EFF0D1;
 $green-sheen: #77BA99;
 $charleston-green: #262730;
 
+
+$open-sans: 'Open Sans Condensed', sans-serif;
+$pathway-gothic: 'Pathway Gothic One', sans-serif;
+// font-family: 'Open Sans Condensed', sans-serif;
+// font-family: 'Pathway Gothic One', sans-serif;
+
 .box {
   background: $green-sheen;
   border: 3px solid $eggshell;
   padding: 40px 80px;
   color: $charleston-green;
+  font-family: $open-sans;
   .button {
     font-weight: bold;
     text-align: center;
@@ -17,11 +24,21 @@ $charleston-green: #262730;
     color: $charleston-green;
   }
 }
-
-#description {
-  list-style: none;
+h1 {
+  font-size: 48px;
+  font-weight: bold;
 }
 
+.illness-display {
+  display: none;
+}
+
+.well {
+  font-style: $pathway-gothic;
+  background: $eggshell;
+  color: $english-vermillion;
+  text-align: center;
+}
 
 body {
   background: $charleston-green;

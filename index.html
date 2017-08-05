@@ -3,6 +3,7 @@
   <head>
     <head>
     <link rel="stylesheet" href="build/css/vendor.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Pathway+Gothic+One" rel="stylesheet">
     <link rel="stylesheet" href="build/css/styles.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
@@ -16,17 +17,18 @@
         <form id="medical-issue">
           <label for="illness">Please enter the symptom you would like to find a doctor for:</label>
           <input id="illness" type="text">
-          <button class="button" type="submit" id="please">submit</button>
+          <button class="button" type="submit">submit</button>
         </form>
-
-
-
       </div>
-      <div>
+      <br><br>
+      <div class="box illness-display">
         <p class="reported-illness"></p>
-      </div>
-      <div class="box 2">
         <ul id="results"></ul>
+      </div>
+      <br>
+      <div class="well">
+        <p>Information for this website is provided by the <a href="https://developer.betterdoctor.com/">Better Doctor Inc.</a> API.</p>
+
       </div>
     </div>
   </body>
