@@ -12,24 +12,34 @@
   </head>
   <body>
     <div class="container">
-      <div class="box">
-        <h1>PDX Doctor Finder</h1>
-        <form id="medical-issue">
-          <label for="illness">Please enter the symptom you would like to find a doctor for:</label>
-          <input id="illness" type="text" required>
-          <button class="button" type="submit">submit</button>
-        </form>
-      </div>
-      <br><br>
-      <div class="box illness-display">
-        <p class="reported-illness"></p>
-        <ul id="results"></ul>
-      </div>
       <br>
-      <div class="well">
-        <p>Information for this website is provided by the <a href="https://developer.betterdoctor.com/">Better Doctor Inc.</a> API.</p>
-        <p>Search parameters are limited to 20 results.</p>
-
+      <div class="row">
+        <div class="col-md-2">
+          <!-- empty -->
+        </div>
+        <div class="col-md-8">
+          <div class="box">
+            <h1>PDX Doctor Finder</h1>
+            <form id="medical-issue">
+              <label for="illness">Please enter the symptom you would like to find a doctor for:</label>
+              <input id="illness" type="text" placeholder="heart" required>
+              <button class="button" type="submit">submit</button>
+            </form>
+          </div>
+          <br><br>
+          <div class="box illness-display">
+            <p class="reported-illness"></p>
+            <ul id="results"></ul>
+          </div>
+          <br>
+          <div class="well">
+            <p>Information for this website is provided by the <a href="https://developer.betterdoctor.com/">Better Doctor Inc.</a> API.</p>
+            <p>Search parameters are limited to 20 results.</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <!-- empty -->
+        </div>
       </div>
     </div>
   </body>

@@ -1,7 +1,7 @@
 var apiKey = require('./../.env').apiKey;
 
 function Doctor() {
-  
+
 }
 
 Doctor.prototype.getDoctor = function(medicalIssue, displayDoctor) {
