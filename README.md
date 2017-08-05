@@ -27,6 +27,9 @@ _**Cloning directions:**_
     * To install packages in project type:
       * `npm install`
       * `bower install`
+      * Go to https://developer.betterdoctor.com/ and sign up for an API key
+      * At the top level of your file create a file called `.env`
+        * exports.apiKey = "YOUR-API-KEY-GOES-HERE";
       * `gulp build`
       * `gulp serve`
     * At this point the browser will open at localhost:3000 in order to view app.
