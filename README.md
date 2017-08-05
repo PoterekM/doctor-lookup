@@ -64,7 +64,7 @@ _**Cloning directions:**_
 * _Node.js_
 
 ## Known Bugs
-* _Program is not able to repeat back to user what it is that they searched for._
+* _There are no known current bugs_
 
 ### License
 

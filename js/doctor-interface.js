@@ -1,6 +1,6 @@
 var Doctor = require('./../js/doctor.js').doctorModule;
 
-var displayDoctor = function(doctors, medicalIssue) {
+var displayDoctor = function(medicalIssue, doctors) {
   doctors.forEach(function(doctor) {
     $('#results').append("<li>" + doctor.profile.last_name + ", " + doctor.profile.first_name + " " + "</li>");
     console.log(doctor.specialties);
